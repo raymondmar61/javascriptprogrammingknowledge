@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Programming Knowledge 09 Switch Statement</title>
+</head>
+<body>
+<p>Evaluate an expression.  On the basis of expression, perform some piece of code.  It like VBA Select Case statements.  If you don't provide a break statement, then the switch find the closest case matching the expression to break; for example, if score = 95, switch goes to case 90:  If score = 94, switch goes to default:.</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var score = 94;
+	var result;
+
+switch(score) {
+	case 100:
+
+	case 95:
+
+	case 90:
+		result = "very good";
+		break;
+	case 60:
+		result = "good";
+		break;
+	case 40:
+		result = "ok";
+		break
+	default:
+		result = "unknown";
+}
+document.getElementById("demo").innerHTML = result;
+
+</script>
+</body>
+</html>

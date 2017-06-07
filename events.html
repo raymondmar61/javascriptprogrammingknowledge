@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Programming Knowledge 07 Events</title>
+</head>
+<body onload = "showonload()">
+<p>The most common events are onchange, onclick, onmouseover, onmouseout, onkeydown, onload.</p>
+<button onclick="alert('Hello world')">Click me</button>
+<button onclick="getElementById('myid').innerHTML=Date()">Click me Date()</button>
+<button onmouseout="getElementById('myid').innerHTML=Date()">Mouse Over Date()</button>
+<button onmouseout="show()").innerHTML=Date()">Mouse Over Date() show() function</button>
+<button onmouseout="this.innerHTML=Date()">Mouse Over this.innerHTML=Date() button</button>
+<h1 id="myid"></h1>
+<h1 id="myidfunction"></h1>
+<button onclick="window.close()">Close Window</button>
+<button onclick="closewindow()">Close Window closewindow() function</button>
+<input type='button' name='closeawesome' value='Close Window not in tutorial' onclick='window.close()'>
+<h1 id="myidonload"></h1>
+<input type="text" onkeydown="showonkeydown()">
+<br>type a key in the text box above, when pressing a keystroke, h1 id="myidonload" date is updated.
+
+<script type="text/javascript">
+	function show() {
+		document.getElementById("myidfunction").innerHTML=Date();
+	}
+
+	function showonload() {
+		document.getElementById("myidonload").innerHTML=Date();
+	}
+
+	function showonkeydown() {
+		document.getElementById("myidonload").innerHTML=Date();
+	}
+
+	function closewindow() {
+		window.close();
+	}
+
+</script>
+</body>
+</html>
